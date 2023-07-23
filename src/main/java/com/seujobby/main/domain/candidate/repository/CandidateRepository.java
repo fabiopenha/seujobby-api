@@ -8,4 +8,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface CandidateRepository extends JpaRepository<Candidate, Long> {
 
     Page<Candidate> findAllByActiveTrue(Pageable pagination);
+
+    boolean existsByEmail(String email);
 }

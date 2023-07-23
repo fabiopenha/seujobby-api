@@ -16,11 +16,14 @@ public class Candidate {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+
+    @Column(unique = true)
     private String email;
     private String phone;
     private LocalDate birthDate;
     @Enumerated(EnumType.STRING)
     private Sex sex;
+    @Column(unique = true)
     private String cpf;
     private boolean active = true;
     @Embedded

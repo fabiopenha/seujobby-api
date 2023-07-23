@@ -1,5 +1,6 @@
 package com.seujobby.main.domain;
 
+import com.seujobby.main.domain.city.City;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.ManyToOne;

@@ -1,6 +1,5 @@
 package com.seujobby.main.domain.dtos;
 
-import com.seujobby.main.domain.City;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
