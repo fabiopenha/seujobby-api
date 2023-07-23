@@ -10,7 +10,7 @@ public class CurriculumController {
 
     }
 
-    @GetMapping
+    @GetMapping("/{id}")
     public void getOne(){
 
     }

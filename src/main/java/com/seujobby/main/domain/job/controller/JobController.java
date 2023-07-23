@@ -10,7 +10,7 @@ public class JobController {
 
     }
 
-    @GetMapping
+    @GetMapping("/{id}")
     public void getOne(){
 
     }
