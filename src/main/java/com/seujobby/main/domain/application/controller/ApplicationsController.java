@@ -3,14 +3,14 @@ package com.seujobby.main.domain.application.controller;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/v1/seujobby/application")
-public class ApplicationController {
+@RequestMapping("/v1/seujobby/applications")
+public class ApplicationsController {
     @PostMapping
     public void create(){
 
     }
 
-    @GetMapping
+    @GetMapping("/{id}")
     public void getOne(){
 
     }

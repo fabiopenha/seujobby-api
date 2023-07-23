@@ -4,21 +4,25 @@ import com.seujobby.main.domain.Address;
 import com.seujobby.main.domain.application.Application;
 import com.seujobby.main.domain.enums.Sex;
 import jakarta.persistence.*;
+import lombok.Data;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Table(name = "candidate")
 @Entity
+@Data
 public class Candidate {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String email;
     private String phone;
+    private LocalDate birthDate;
     @Enumerated(EnumType.STRING)
     private Sex sex;
     private String cpf;
-    private boolean isActive;
+    private boolean active = true;
     @Embedded
     private Address address;
 

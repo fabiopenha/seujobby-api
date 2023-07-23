@@ -10,7 +10,7 @@ public class CompanyController {
 
     }
 
-    @GetMapping
+    @GetMapping("/{id}")
     public void getOne(){
 
     }
