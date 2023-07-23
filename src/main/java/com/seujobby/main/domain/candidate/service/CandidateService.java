@@ -26,6 +26,12 @@ public class CandidateService {
 
     @Transactional
     public CandidateResponse create(CandidateRequest request){
+
+        Boolean emailExist = repository.existsByEmail(request.getEmail());
+
+        if(emailExist) {
+            throw new RuntimeException("Email já existe");
+        }
         Candidate candidate = modelMapper.map(request, Candidate.class);
         Candidate savedCandidate = repository.save(candidate);
         return modelMapper.map(savedCandidate, CandidateResponse.class);

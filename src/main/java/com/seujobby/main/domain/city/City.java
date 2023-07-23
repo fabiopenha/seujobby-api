@@ -1,5 +1,6 @@
-package com.seujobby.main.domain;
+package com.seujobby.main.domain.city;
 
+import com.seujobby.main.domain.State;
 import jakarta.persistence.Entity;
 import jakarta.persistence.*;
 import jakarta.persistence.Table;
@@ -14,7 +15,7 @@ public class City {
     private Long Id;
     private String name;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne()
     private State state;
     private String sigla;
 }

@@ -1,4 +1,4 @@
-package com.seujobby.main.domain.config;
+package com.seujobby.main.configuration;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
