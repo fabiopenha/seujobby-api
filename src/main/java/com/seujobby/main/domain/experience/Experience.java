@@ -1,5 +1,6 @@
-package com.seujobby.main.domain;
+package com.seujobby.main.domain.experience;
 
+import com.seujobby.main.domain.Occupation;
 import com.seujobby.main.domain.company.Company;
 import jakarta.persistence.*;
 import lombok.Data;

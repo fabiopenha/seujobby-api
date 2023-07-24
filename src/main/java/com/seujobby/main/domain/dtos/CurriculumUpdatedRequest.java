@@ -7,7 +7,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class CurriculumRequest {
+public class CurriculumUpdatedRequest {
     @NotNull(message = "o campo Salário máximo precisa ser informado!")
     private Double maxSalaryExpectation;
     @NotNull(message = "o campo Salário minimo precisa ser informado!")
@@ -15,7 +15,7 @@ public class CurriculumRequest {
     @NotNull @Valid
     private CandidateExperienceRequest candidateId;
     @NotNull @Valid
-    private List<ExperienceRequest> experience;
+    private List<ExperienceUpdatedRequest> experience;
     @NotNull @Valid
     private LanguageResquest language;
 }

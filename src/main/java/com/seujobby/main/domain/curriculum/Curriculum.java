@@ -1,6 +1,6 @@
 package com.seujobby.main.domain.curriculum;
 
-import com.seujobby.main.domain.Experience;
+import com.seujobby.main.domain.experience.Experience;
 import com.seujobby.main.domain.Language;
 import com.seujobby.main.domain.candidate.Candidate;
 import jakarta.persistence.*;
