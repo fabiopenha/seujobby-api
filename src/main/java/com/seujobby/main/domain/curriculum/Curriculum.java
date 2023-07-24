@@ -1,12 +1,14 @@
 package com.seujobby.main.domain.curriculum;
 
-import com.seujobby.main.domain.Experience;
+import com.seujobby.main.domain.experience.Experience;
 import com.seujobby.main.domain.Language;
 import com.seujobby.main.domain.candidate.Candidate;
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.util.List;
 
+@Data
 @Entity
 @Table(name = "curriculum")
 public class Curriculum {
@@ -16,7 +18,7 @@ public class Curriculum {
     private Double minSalaryExpectation;
     @OneToOne
     private Candidate candidateId;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Experience> experience;
     @Embedded
     private Language language;

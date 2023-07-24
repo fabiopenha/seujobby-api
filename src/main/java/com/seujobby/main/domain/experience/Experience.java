@@ -1,10 +1,13 @@
-package com.seujobby.main.domain;
+package com.seujobby.main.domain.experience;
 
+import com.seujobby.main.domain.Occupation;
 import com.seujobby.main.domain.company.Company;
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.time.LocalDate;
 
+@Data
 @Entity
 @Table(name = "experience")
 public class Experience {
@@ -17,6 +20,6 @@ public class Experience {
     private LocalDate startDate;
     private LocalDate endDate;
     private String activityDescription;
-    private boolean isCurrentJob;
+    private boolean currentJob;
 
 }
