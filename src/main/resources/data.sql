@@ -26,3 +26,9 @@ INSERT INTO state (id, state_Name) VALUES
   (25, 'São Paulo'),
   (26, 'Sergipe'),
   (27, 'Tocantins');
+
+INSERT INTO Occupation (id, name) VALUES (1, 'Desenvolvedor de Software');
+INSERT INTO Occupation (id, name) VALUES (2, 'Analista de Sistemas');
+INSERT INTO Occupation (id, name) VALUES (3, 'Engenheiro de Dados');
+INSERT INTO Occupation (id, name) VALUES (4, 'Administrador de Banco de Dados');
+INSERT INTO Occupation (id, name) VALUES (5, 'Arquiteto de Soluções');
